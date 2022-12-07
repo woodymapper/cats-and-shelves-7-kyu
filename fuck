@@ -1,0 +1,11 @@
+function cats(int $start, int $finish): int {
+ 
+  $skok = 0;
+  while( $start < $finish) {
+    if( $start+3 > $finish) {
+      $start++;$skok++;
+    }
+    else { $start =  $start+3;$skok++; }
+  }
+  return $skok;
+}
